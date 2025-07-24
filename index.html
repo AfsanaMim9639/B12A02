@@ -21,6 +21,40 @@
   .animate-spin-slower {
     animation: spin-slow 5s linear infinite;
   }
+
+  .bg-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+    linear-gradient(to right, #E95A08 1px, transparent 1px),
+      linear-gradient(to bottom, #E95A08 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+  }
+@media (min-width: 768px) {
+    .md\:bg-grid-10::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(to right, #E95A08 1px, transparent 1px),
+        linear-gradient(to bottom, #E95A08 1px, transparent 1px);
+      background-size: 10px 10px;
+      opacity: 0.3;
+      z-index: 0;
+      pointer-events: none;
+    }
+  }
+  
 </style>
     
 </head>
@@ -69,21 +103,24 @@
 <section class="w-full max-w-[1140px] h-auto mt-24 mx-auto px-4">
   <div class="flex flex-col-reverse md:flex-row items-center md:items-start md:h-[221px]">
   
-  <div class="w-full md:w-1/2 text-left px-4">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
-      Always <span style="color: #E95A08;">Fresh <br>Flowers<br></span>
-    </h1>
-    <p class="mt-4 text-gray-600">
-     Indulge your sense with the beauty and fragrance of our fresh flower shop. 
-     From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
-    </p>
-  </div>
-
+    <!-- Left Content with Grid Background -->
+    <div class="relative w-full md:w-1/2 px-4 md:bg-grid-10">
   
-  <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
-    <img src="assets/hero-flower.png" alt="Banner Image" class="max-h-[221px] max-w-[570px] object-contain" />
-  </div>
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-snug z-10 relative">
+    Always <span style="color: #E95A08;">Fresh <br>Flowers<br></span>
+  </h1>
+  <p class="mt-4 text-gray-600 z-10 relative">
+    Indulge your sense with the beauty and fragrance of our fresh flower shop. 
+    From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+  </p>
 </div>
+
+    
+    <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
+      <img src="assets/hero-flower.png" alt="Banner Image" class="max-h-[221px] max-w-[570px] object-contain" />
+    </div>
+
+  </div>
 </section>
 
 
@@ -220,7 +257,7 @@
 </section>
 
 <!------------------------Challange Section(Latest deal Section)------------------------>
-<section class="w-full px-6 py-16 bg-white">
+<section class="w-full px-6 py-16 bg-white mt-[20px]">
   
   <div class="text-center mb-12">
     <h2 class="text-3xl md:text-4xl font-bold mb-4">
@@ -340,8 +377,8 @@
     
     <div class="flex items-start space-x-8">
       <a href="#"><img src="assets/icon-linkedin.png" alt="LinkedIn" class="h-7 w-7"></a>
-      <a href="#"><img src="assets/icon-facebook.png" alt="Facebook" class="h-7 w-7"></a>
       <a href="#"><img src="assets/icon-twitter.png" alt="Twitter" class="h-7 w-7"></a>
+      <a href="#"><img src="assets/icon-facebook.png" alt="Facebook" class="h-7 w-7"></a>
       <a href="#"><img src="assets/icon-youtube.png" alt="YouTube" class="h-7 w-7"></a>
     </div>
 
