@@ -68,19 +68,19 @@
     </div>
 
     
-    <div class="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
-      <a href="#" class="hover:text-orange-600">Home</a>
-      <a href="#" class="hover:text-orange-600">Shop</a>
-      <a href="#" class="hover:text-orange-600">About Us</a>
+    <div class="hidden md:flex items-center space-x-6 font-medium">
+      <a href="#" class="hover:text-orange-600 text-[#000000]">Home</a>
+      <a href="#" class="hover:text-orange-600 text-gray-500">Shop</a>
+      <a href="#" class="hover:text-orange-600 text-gray-500">About Us</a>
 
       
-      <div class="flex items-center space-x-1">
+      <div class="flex items-center space-x-1 text-gray-700">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-orange-600">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437m0 0l.597 2.24M5.106 5.272h13.788a.75.75 0 01.728.911l-1.5 6a.75.75 0 01-.728.589H7.122m0 0L5.1 5.272m2.022 7.999l.38 1.424a1.5 1.5 0 001.456 1.105h7.084a1.5 1.5 0 001.456-1.105l.38-1.424M6 20.25a.75.75 0 100-1.5.75.75 0 000 1.5zm12 0a.75.75 0 100-1.5.75.75 0 000 1.5z" />
         </svg>
-        <span class="text-sm" onclick="alert('Flower Added to Cart')">Cart (99)</span>
+        <span class="text-sm" onclick="alert('Flower Added to Cart')">Cart ($56)</span>
       </div>
     </div>
 
@@ -91,7 +91,7 @@
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437m0 0l.597 2.24M5.106 5.272h13.788a.75.75 0 01.728.911l-1.5 6a.75.75 0 01-.728.589H7.122m0 0L5.1 5.272m2.022 7.999l.38 1.424a1.5 1.5 0 001.456 1.105h7.084a1.5 1.5 0 001.456-1.105l.38-1.424M6 20.25a.75.75 0 100-1.5.75.75 0 000 1.5zm12 0a.75.75 0 100-1.5.75.75 0 000 1.5z" />
       </svg>
-      <span class="text-sm" onclick="alert('Flower Added to Cart')">Cart (99)</span>
+      <span class="text-sm" onclick="alert('Flower Added to Cart')">Cart ($56)</span>
     </div>
 
   </div>
@@ -101,22 +101,21 @@
 
 
 <section class="w-full max-w-[1140px] h-auto mt-24 mx-auto px-4">
-  <div class="flex flex-col-reverse md:flex-row items-center md:items-start md:h-[221px]">
+  <div class="flex flex-col-reverse md:flex-row items-stretch md:h-[221px]">
   
     <!-- Left Content with Grid Background -->
-    <div class="relative w-full md:w-1/2 px-4 md:bg-grid-10">
-  
-  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-snug z-10 relative">
-    Always <span style="color: #E95A08;">Fresh <br>Flowers<br></span>
-  </h1>
-  <p class="mt-4 text-gray-600 z-10 relative">
-    Indulge your sense with the beauty and fragrance of our fresh flower shop. 
-    From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
-  </p>
-</div>
+    <div class="relative w-full md:w-1/2 px-4 md:bg-grid-10 h-full flex flex-col justify-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-[#000000] leading-snug z-10 relative">
+        ALWAYS <span style="color: #E95A08;">FRESH <br>FLOWERS<br></span>
+      </h1>
+      <p class="mt-4 text-gray-600 z-10 relative">
+        Indulge your sense with the beauty and fragrance of our fresh flower shop. 
+        From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+      </p>
+    </div>
 
-    
-    <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
+    <!-- Right Image Section -->
+    <div class="w-full md:w-1/2 h-full flex justify-center items-center">
       <img src="assets/hero-flower.png" alt="Banner Image" class="max-h-[221px] max-w-[570px] object-contain" />
     </div>
 
@@ -124,11 +123,12 @@
 </section>
 
 
+
 <!--------------------Plants Section----------------------->
 <section class="w-full max-w-[1140px] mx-auto mt-24 px-4">
   
   <div class="text-center mb-12">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800"><span style="color: #E95A08;">Our</span> Plants</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-[#000000]-800"><span style="color: #E95A08;">Our</span> Plants</h2>
     <p class="mt-2 text-gray-600 text-left md:text-center">Indulge your sense with the beauty and fragrance of our fresh flower shop. 
        From <br>classic roses toexotic blooms, we offer a wide variety of fresh </p>
   </div>
@@ -234,7 +234,7 @@
 
     
     <div class="w-full md:w-1/2 mt-10">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#000000]-800 mb-4">
         Flower & Plants <br> Lover
       </h2>
       <ul class="list-disc pl-5 space-y-4 text-gray-600">
