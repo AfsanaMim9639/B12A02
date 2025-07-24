@@ -8,7 +8,20 @@
 
     <title>Responsive website</title>
 
+<style>
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
+  .animate-spin-slower {
+    animation: spin-slow 5s linear infinite;
+  }
+</style>
     
 </head>
 <body>
@@ -177,7 +190,8 @@
 
   
   <img src="assets/trusted-badge.png" alt="Trusted Seller Badge"
-       class="absolute -top-16 -right-16 w-[150px] h-[150px] z-10 hidden animate-spin sm:block" />
+       class="absolute -top-16 -right-16 w-[150px] h-[150px] z-10 animate-spin-slower hidden sm:block"
+    />
 </div>
 
 
